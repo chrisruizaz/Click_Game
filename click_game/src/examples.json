@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Pikachu",
+    "image": "https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png"
+  },
+  {
+    "id": 2,
+    "name": "Squirtle",
+    "image": "https://vignette.wikia.nocookie.net/randompokemon/images/7/77/Squirtle_-_XY_anime.png/revision/latest?cb=20151121115753"
+  },
+  {
+    "id": 3,
+    "name": "Bulbasaur",
+    "image": "https://vignette.wikia.nocookie.net/pokemontowerdefense/images/2/21/001Bulbasaur.png/revision/latest?cb=20130530130719"
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "image": "http://static.pokemonpets.com/images/monsters-images-800-800/4-Charmander.png"
+  }
+]

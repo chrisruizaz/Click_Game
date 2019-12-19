@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import GameContainer from "./components/container/GameContainer";
+import Card from "./components/cards/cards";
+import examples from "./examples.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    examples
+  };
+  render() {
+    return (
+      <div>
+        <GameContainer
+          images={this.state.examples.map(image => (
+            <Card src={image.image} name={image.name} />
+          ))}
+        />
+        ;
+      </div>
+    );
+  }
 }
 
 export default App;
