@@ -5,14 +5,38 @@ import examples from "./examples.json";
 
 class App extends Component {
   state = {
-    examples
+    examples,
+    click_array: []
   };
+
+  shuffleArray = examples => {
+    for (let i = examples.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = examples[i];
+      examples[i] = examples[j];
+      examples[j] = temp;
+    }
+    return examples;
+  };
+
+  clickPicture = id => {
+    console.log(id);
+    var click = this.state.click_array.concat(id);
+    this.setState({ click_array: click });
+    console.log(click);
+  };
+
   render() {
     return (
       <div>
         <GameContainer
           images={this.state.examples.map(image => (
-            <Card src={image.image} name={image.name} />
+            <Card
+              src={image.image}
+              name={image.name}
+              id={image.id}
+              clickPicture={this.clickPicture}
+            />
           ))}
         />
         ;

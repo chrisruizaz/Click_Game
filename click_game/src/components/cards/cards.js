@@ -4,7 +4,12 @@ function Card(props) {
 
   return (
     <div className="card">
-      <img class="card-img-top" src={props.src} alt={props.name} />
+      <img
+        className="card-img-top"
+        src={props.src}
+        alt={props.name}
+        onClick={() => props.clickPicture(props.id)}
+      />
     </div>
   );
 }

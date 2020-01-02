@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### My need to have
+
+create an empty array that the clicks get stored in
+shuffle function on line 9 inside the component
+make the images clickable "click event handler"
+check array of Id's see if its in there
+push to empty erray
+if statement in the function
